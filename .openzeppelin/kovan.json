@@ -1,0 +1,75 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xDB75a1ECb431dE74E68Ec8B5c8FC17d9E0CeE98E",
+    "txHash": "0xa1d1316767e7b6197b736040c007c85da96d4d342e476f4368d991c6892f07c3"
+  },
+  "proxies": [
+    {
+      "address": "0x871363C96a9a193dC8066CD4D622557895B1b078",
+      "txHash": "0x503f4a22abf1f864cef81505c3f6fad025f4be23cdb4e7ed8bd440170913b670",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x4734867850EfE370643a8149185fc3516975A051",
+      "txHash": "0x26756405ff34f19d6ef3d8dc6831ef804fbdbf7be91839545d3d696460ff9651",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x497FeBbe4A7184b006D94252f45bAF5d81c3621C",
+      "txHash": "0x2a8e7b1694263ae0b36daf876f1015fae37e15d336b7eec099e8c3aa837d68d4",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x54d54B677914671FEe966Cf23F27E8B87375427A",
+      "txHash": "0xf6b0bf9a1097d0fd2dc3c02f485ab3d040c3862588ee84888cdbb73375298b60",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "17ababb0db6084ff55590bcd097c7b8cbfb4218a09b8da62cec55b64fc1c76f1": {
+      "address": "0x457f154aa2f689E6100940079F2002Dd2B45b2fc",
+      "txHash": "0xe386ca35b8d9c712534eeaceabbbe90893a89e5c58571273d5d35d5bfc072ed4",
+      "layout": {
+        "storage": [
+          {
+            "label": "score",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Demo",
+            "src": "contracts\\Demo.sol:5"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "c0a72ca18296df2db72f4a5e71a002b203ff2dbe760b5fe3cd5b3ffce6336d0b": {
+      "address": "0xC8301522e14A1A2487D1eed8b055487025FA2CB3",
+      "txHash": "0xd3263aacf3dd36aa3bca30859dd32a53115260a5f78c7d4da368e2bf0582a8f2",
+      "layout": {
+        "storage": [
+          {
+            "label": "score",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Demo",
+            "src": "contracts\\Demo.sol:5"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}

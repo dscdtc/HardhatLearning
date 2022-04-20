@@ -1,0 +1,80 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x09635F643e140090A9A8Dcd712eD6285858ceBef",
+    "txHash": "0x662defee1afdbfd8276a6878d68e3f632f05c4ce2d98704aab204908460fa052"
+  },
+  "proxies": [
+    {
+      "address": "0xc5a5C42992dECbae36851359345FE25997F5C42d",
+      "txHash": "0xbdd5231a769884a0ec05e5065c73118d0cdeaa76e337ec69bde583c03e1cb206",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xa82fF9aFd8f496c3d6ac40E2a0F282E47488CFc9",
+      "txHash": "0x5e2a6e828b541fddc279ca4033274c8dd0d26bf8cd85b2e2bc21919a11a07832",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x998abeb3E57409262aE5b751f60747921B33613E",
+      "txHash": "0x79d5d39d5090c645ac95a7c33cd5fc1766265a84be7a331d564a40239f10d167",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8f86403A4DE0BB5791fa46B8e795C547942fE4Cf",
+      "txHash": "0x426756a728a936df0f5c65be8898d0632cf06821c7f9e3b8998f688e7b1fdbe8",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9d4454B023096f34B160D6B654540c56A1F81688",
+      "txHash": "0x041b144339c5e99f19e80a5eff900f44601a85cfbfa02a6b48ea2d6d4299baae",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "17ababb0db6084ff55590bcd097c7b8cbfb4218a09b8da62cec55b64fc1c76f1": {
+      "address": "0x7a2088a1bFc9d81c55368AE168C2C02570cB814F",
+      "txHash": "0x32cc25ffe06754c636cce0084ce2080ae804e48ed7f307ed816ab8da629b35b2",
+      "layout": {
+        "storage": [
+          {
+            "label": "score",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Demo",
+            "src": "contracts\\Demo.sol:5"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "8dec4b4e1ce71c5b377f1b0e1b35d2425f7ae557b7d3762a159db2005eb1a0d4": {
+      "address": "0x67d269191c92Caf3cD7723F116c85e6E9bf55933",
+      "txHash": "0x756d9da074660bc67a40ba6e7d812aa82267d2ac7e4925cbf7dd2435c7129096",
+      "layout": {
+        "storage": [
+          {
+            "label": "score",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "DemoV2",
+            "src": "contracts\\DemoV2.sol:7"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
