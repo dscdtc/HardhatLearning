@@ -70,6 +70,28 @@
           }
         }
       }
+    },
+    "a805309f700ee25c3ef77fe6eba201df98872e52e5f19dd625c9fed7d0e91bf2": {
+      "address": "0xeb34bD00C59300F55468EE0b4BA040987AD0a1A9",
+      "txHash": "0x6b0a76b2f62e411e69dcb01e7045de422431b9816169d0ae2377e05acc8bdc1f",
+      "layout": {
+        "storage": [
+          {
+            "label": "score",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "DemoV2",
+            "src": "contracts\\DemoV2.sol:7"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
     }
   }
 }

@@ -2,6 +2,7 @@ require("@nomiclabs/hardhat-waffle");
 require('@openzeppelin/hardhat-upgrades');
 require('@nomiclabs/hardhat-ethers');
 require("@nomiclabs/hardhat-etherscan");
+require('dotenv').config();
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -28,9 +29,41 @@ module.exports = {
   },
 
   networks: {
+    rinkeby: {
+      url: "https://rinkeby.infura.io/v3/" + process.env.INFURA_ID, //<---- YOUR INFURA ID! (or it won't work)
+      accounts: [
+        process.env.PRIVATE_KEY
+      ],
+    },
     kovan: {
-      url: "https://kovan.infura.io/v3/5d437dff064041849c2720ed1632e714",
-      accounts: ["<Your wallet secret key>"]
+      url: "https://kovan.infura.io/v3/" + process.env.INFURA_ID, //<---- YOUR INFURA ID! (or it won't work)
+      accounts: [
+        process.env.PRIVATE_KEY
+      ],
+    },
+    mainnet: {
+      url: "https://mainnet.infura.io/v3/" + process.env.INFURA_ID, //<---- YOUR INFURA ID! (or it won't work)
+      accounts: [
+        process.env.PRIVATE_KEY
+      ],
+    },
+    ropsten: {
+      url: "https://ropsten.infura.io/v3/" + process.env.INFURA_ID, //<---- YOUR INFURA ID! (or it won't work)
+      accounts: [
+        process.env.PRIVATE_KEY
+      ],
+    },
+    bsctestnet: {
+      url: "https://data-seed-prebsc-1-s1.binance.org:8545", //<---- YOUR INFURA ID! (or it won't work)
+      accounts: [
+        process.env.PRIVATE_KEY
+      ],
+    },
+    arbitrum: {
+      url: 'https://arbitrum-rinkeby.infura.io/v3/' + process.env.INFURA_ID,
+      accounts: [
+        process.env.PRIVATE_KEY
+      ],
     },
     local: {
       url: 'http://127.0.0.1:8545', //本地RPC地址
@@ -54,6 +87,6 @@ module.exports = {
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: "<Your ApiKey>"
+    apiKey: process.env.APIKEY
   },
 };

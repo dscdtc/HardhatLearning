@@ -4,7 +4,7 @@ const { ethers, upgrades } = require("hardhat");
 //主函数
 async function main() {
   const upgradeContractName = 'DemoV2' //升级合约的名称
-  const proxyContractAddress = '0xc5a5C42992dECbae36851359345FE25997F5C42d' //代理合约的名称
+  const proxyContractAddress = '0x54d54B677914671FEe966Cf23F27E8B87375427A' //代理合约的名称
   const DemoUpgrade = await ethers.getContractFactory(upgradeContractName)
   console.log('Upgrading Demo...')
   await upgrades.upgradeProxy(proxyContractAddress, DemoUpgrade)
